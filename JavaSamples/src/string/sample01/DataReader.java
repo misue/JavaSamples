@@ -6,9 +6,11 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class DataReader {
+	private final String regex;
 	private final Pattern p;
 
-	public DataReader(String regex) {
+	public DataReader() {
+		regex = "(\\d\\d\\d\\d)/(\\d\\d)/(\\d\\d) (\\d\\d):(\\d\\d):(\\d\\d)";
 		p = Pattern.compile(regex);
 	}
 
@@ -22,6 +24,7 @@ public class DataReader {
 			int hour = Integer.parseInt(m.group(4));
 			int min = Integer.parseInt(m.group(5));
 			int second = Integer.parseInt(m.group(6));
+			
 			cal = Calendar.getInstance();
 			cal.set(year, month, day, hour, min, second);
 		}

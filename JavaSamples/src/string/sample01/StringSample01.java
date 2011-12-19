@@ -6,8 +6,7 @@ import java.util.Calendar;
 public class StringSample01 {
 
 	void exec() {
-		String pattern = "(\\d\\d\\d\\d)/(\\d\\d)/(\\d\\d) (\\d\\d):(\\d\\d):(\\d\\d)";
-		DataReader dataReader = new DataReader(pattern);
+		DataReader dataReader = new DataReader();
 		
 		String line = "2011/12/19 01:23:45";
 		Calendar date = dataReader.readDate(line);
