@@ -1,5 +1,6 @@
 JavaSamples
 
+*visual
 sample01 最もシンプルな描画サンプル。のつもり。
 (01b) HSBの使用。
 sample02 コマンドライン引数の利用
@@ -16,5 +17,8 @@ sample11 タブ
 sample12 マウスイベント、セレクト、MVC
 sample13 タイマー, Animation
 
-2011.12.18
+*string
+samle01 RegexとCalendar
+
+2011.12.19
 All Rights Reserved. Copyright (C) Kazuo Misue (2011)
